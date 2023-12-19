@@ -1,1 +1,3 @@
-# iHealth-android-sdk-example
+## iHealth-android-sdk-example
+
+# Documentation for Android Native SDK
