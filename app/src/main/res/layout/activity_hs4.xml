@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.HS4">
+
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_disconnect" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_measurement" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_unit" />
+
+            <EditText
+                android:id="@+id/etUnitType"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_user_id" />
+
+            <EditText
+                android:id="@+id/etUserId"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="123" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMeasurement"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="5dp"
+        android:text="@string/function_item_button_measurement" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_data" />
+
+    <Button
+        android:id="@+id/btnGetData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_offline_data" />
+
+    <include layout="@layout/layout_fuction_upgrade" />
+
+</LinearLayout>
+

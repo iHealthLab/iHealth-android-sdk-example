@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ihealth.sdk.KD926"
+    tools:showIn="@layout/activity_kd926">
+
+    <Button
+        android:id="@+id/btn_settime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_settime" />
+
+    <Button
+        android:id="@+id/btn_getbattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_gatbattery" />
+
+    <Button
+        android:id="@+id/btn_setUser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_setUser1" />
+
+    <Button
+        android:id="@+id/btn_setUser2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_setUser2" />
+
+    <Button
+        android:id="@+id/btn_getData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_getData" />
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="btn_disconnect" />
+
+    <TextView
+        android:id="@+id/tv_return"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.ScanFragment">
+
+    <Button
+        android:id="@+id/btnDiscovery"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/connect_main_button_text_discovery" />
+
+    <TextView
+        android:id="@+id/tvListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/connect_main_list_scan_title"
+        android:textColor="@color/color_black_60"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/NbList"
+        style="@style/ListViewDefaultStyle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:divider="@color/color_black_30"
+        android:dividerHeight="1dp" />
+
+    <include layout="@layout/layout_log" />
+
+
+</LinearLayout>

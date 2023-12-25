@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.HS2">
+
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_disconnect" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_get_information" />
+
+    <Button
+        android:id="@+id/btnBindUser"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_bind" />
+
+    <Button
+        android:id="@+id/btnUnBindUser"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_unbind" />
+
+    <Button
+        android:id="@+id/btnGetBindStatus"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_bind_status" />
+
+
+    <Button
+        android:id="@+id/btnGetDeviceInfo"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_device_info" />
+
+    <Button
+        android:id="@+id/btnFunction"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_check_function" />
+
+    <Button
+        android:id="@+id/btnGetMac"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_mac" />
+
+
+    <Button
+        android:id="@+id/btnSetTime"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_set_time" />
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_set_alarm" />
+
+
+    <Button
+        android:id="@+id/btnSedentaryReminder"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_set_sedentary_reminder" />
+
+
+    <Button
+        android:id="@+id/btnSetTarget"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_set_target" />
+
+
+    <Button
+        android:id="@+id/btnSetUserInfo"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_set_user_info" />
+
+    <Button
+        android:id="@+id/btnSetUnit"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_set_unit" />
+
+    <Button
+        android:id="@+id/btnSetWearMode"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_hand_wear_mode" />
+
+    <Button
+        android:id="@+id/btnSetHeartInterval"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_heart_interval" />
+
+    <Button
+        android:id="@+id/btnSetMeasureMode"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_set_heart_measure_mode" />
+
+    <Button
+        android:id="@+id/btnSetNoDisturb"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_no_disturb" />
+
+    <Button
+        android:id="@+id/btnSportMode"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_sport_mode" />
+
+
+    <Button
+        android:id="@+id/btnNoticeComingCall"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_notice_coming_call" />
+
+    <Button
+        android:id="@+id/btnStopComingCall"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_notice_coming_call_no" />
+
+    <Button
+        android:id="@+id/btnNoticeMessage"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_notice_new_message" />
+
+    <Button
+        android:id="@+id/btnRestore"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_restore_factory_setting" />
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_data" />
+
+
+    <Button
+        android:id="@+id/btnSyncConfigPending"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_config_pending" />
+
+    <Button
+        android:id="@+id/btnSyncConfig"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_config" />
+
+    <Button
+        android:id="@+id/btnSyncConfigNo"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_config_no" />
+
+    <Button
+        android:id="@+id/btnGetLiveData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_live_data" />
+
+    <Button
+        android:id="@+id/btnGetActivityCount"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_activity_count" />
+
+    <Button
+        android:id="@+id/btnSyncHealthData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_health_data" />
+
+    <Button
+        android:id="@+id/btnSyncHealthData_no"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_health_data_no" />
+
+    <Button
+        android:id="@+id/btnSyncActivityData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_activity_data" />
+
+    <Button
+        android:id="@+id/btnSyncActivityDataNo"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_sync_activity_data_no" />
+
+</LinearLayout>
+

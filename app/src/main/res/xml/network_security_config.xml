@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://18.236.36.2:8124/upgrade/</domain>
+    </domain-config>
+</network-security-config>

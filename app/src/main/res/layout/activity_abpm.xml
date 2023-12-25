@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_return"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp" />
+
+            <Button
+                android:id="@+id/btn_get_battery"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text=" Get Battery" />
+
+            <Button
+                android:id="@+id/btn_get_function_info"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Function Info" />
+
+            <Button
+                android:id="@+id/btn_set_display_unit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Set display Unit" />
+
+
+            <Button
+                android:id="@+id/btn_set_measure_scheme"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Set Measure Scheme" />
+
+            <Button
+                android:id="@+id/btn_get_measure_scheme"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Measure Scheme" />
+
+            <Button
+                android:id="@+id/btn_modify_current_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="start/stop scheme" />
+
+            <Button
+                android:id="@+id/btn_start_measure_one_time"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Start measure one time" />
+
+            <Button
+                android:id="@+id/btn_stop_measure_one_time"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Interrupt measure" />
+            <Button
+                android:id="@+id/btn_set_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="set ID" />
+
+            <Button
+                android:id="@+id/btn_get_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Get ID" />
+
+            <Button
+                android:id="@+id/btn_get_offline_num"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Offline Num" />
+
+            <Button
+                android:id="@+id/btn_get_offline_data"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Offline Data" />
+
+            <Button
+                android:id="@+id/btn_get_raw_press"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Raw Press" />
+
+            <Button
+                android:id="@+id/btn_delete_all"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Delete All" />
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Disconnect" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

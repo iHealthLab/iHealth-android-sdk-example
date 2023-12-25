@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ihealth.demo.business.device.BG1"
+    tools:showIn="@layout/activity_bg1">
+
+    <TextView
+        android:id="@+id/tvStartBG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_tip_bg1_1"
+        android:textColor="@color/color_black_60"
+        android:layout_marginTop="150dp"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/spMeasureType"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:entries="@array/bp_measure_type"/>
+
+</LinearLayout>

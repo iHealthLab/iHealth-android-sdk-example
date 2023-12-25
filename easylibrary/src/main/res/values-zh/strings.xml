@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">library</string>
+
+    <!--权限-->
+    <string name="permission_disable_error">权限被禁用，请从应用信息->权限中打开相应的权限，否则部分功能将不可使用。</string>
+    <string name="permission_disable_error_sd_card">读写外部存储的权限被禁用，请从应用信息->权限中打开相应的权限，否则该功能将不可使用。</string>
+    <string name="permission_disable_error_no_selectalbum">读写外部存储的权限被禁用，相册功能无法使用</string>
+    <string name="permission_disable_error_sd_card_app_update">读写外部存储的权限被禁用，APP升级的功能将无法使用。请在应用信息->权限中，打开存储空间的权限。</string>
+
+    <!--Photo-->
+    <string name="photo_error_select_photo">选择图片错误</string>
+    <string name="photo_error_no_memory_card">没有检测到内存卡</string>
+    <string name="photo_error_take_picture">拍照错误</string>
+    <string name="photo_error_take_video">录制错误</string>
+    <string name="photo_download_tip">是否下载图片?</string>
+    <string name="photo_download_save_to_tip">已下载图片到：</string>
+    <string name="photo_download_fail">下载图片失败</string>
+    <string name="photo_upload_successful">图片上传成功</string>
+
+
+    <string name="downloading">正在下载&#8230;</string>
+    <string name="download_completed">下载完成</string>
+    <string name="download_error">下载失败</string>
+    <string name="download_cancel">取消下载</string>
+
+    <string name="btn_text_cancel">取消</string>
+    <string name="btn_text_confirm">确定</string>
+
+</resources>

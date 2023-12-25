@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ihealth.sdk.BG1S"
+    tools:showIn="@layout/activity_bg1s">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/tv_return"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="disConnect" />
+
+            <Button
+                android:id="@+id/btn_get_status"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="getStatus" />
+
+            <Button
+                android:id="@+id/btn_set_mode1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="measure blood" />
+
+            <Button
+                android:id="@+id/btn_set_mode2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="measure ctl" />
+
+            <Button
+                android:id="@+id/btn_query_code"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Query code" />
+
+            <Button
+                android:id="@+id/btn_set_code"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Set code" />
+
+            <Button
+                android:id="@+id/btn_query_device_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="queryDeviceInfo" />
+
+            <Button
+                android:id="@+id/btn_query_cloud_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="queryCloudInfo" />
+
+
+            <Button
+                android:id="@+id/btn_download_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="downloadFile" />
+
+            <Button
+                android:id="@+id/btn_stop_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stopDownload" />
+
+
+            <Button
+                android:id="@+id/btn_start_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="startUpgrade" />
+
+            <Button
+                android:id="@+id/btn_stop_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="stopUpgrade" />
+
+
+            <Button
+                android:id="@+id/btn_isUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="isUpgrade" />
+
+            <Button
+                android:id="@+id/btn_delete_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deleteFile" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
