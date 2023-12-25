@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.HS6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_username" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="zhaoyongguang@ihealthlabs.com.cn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreate"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="5dp"
+        android:text="@string/function_item_button_create_control" />
+
+    <Button
+        android:id="@+id/btnAuthorization"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:enabled="false"
+        android:text="@string/main_title_authorization" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_measurement" />
+
+    <include layout="@layout/layout_divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_ssid" />
+
+            <EditText
+                android:id="@+id/mEtSsid"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Linksys02232_2.4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_password" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="0123456789" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_device_key" />
+
+            <EditText
+                android:id="@+id/etDeviceKey"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="device_key" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btnSetWifi"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/function_item_button_set_wifi" />
+
+    <include layout="@layout/layout_divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_birthday" />
+
+            <EditText
+                android:id="@+id/etBirthday"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="1999-11-12 11:29:10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/function_item_text_serialNumber" />
+
+            <EditText
+                android:id="@+id/etSerial"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="ACCF2337A952" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_height" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="180" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_weight" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="88.5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_gender" />
+
+            <EditText
+                android:id="@+id/etGender"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_is_sportsman" />
+
+            <EditText
+                android:id="@+id/etSport"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnBind"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_bind" />
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnUnBind"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_unbind" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_divider_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_unit" />
+
+            <EditText
+                android:id="@+id/etUnit"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="100" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetUnit"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_set_unit" />
+    </LinearLayout>
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_data" />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btnGetData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_data_from_cloud" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_client_id" />
+
+            <EditText
+                android:id="@+id/etClientId"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="708bde5b65884f8d9e579e33e66e8e80" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_client_secret" />
+
+            <EditText
+                android:id="@+id/etClientSecret"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="38ff62374a0d4aacadaf0e4fb4ed1931" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_client_random" />
+
+            <EditText
+                android:id="@+id/etClientRandom"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="random_str" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btnGetToken"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_token" />
+
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bp_measure_type">
+        <item>blood</item>
+        <item>ctl</item>
+    </string-array>
+</resources>

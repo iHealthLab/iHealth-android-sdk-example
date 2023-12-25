@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.BG1A">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSetMeasureMode"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_set_device_measure_mode_0" />
+
+            <Button
+                android:id="@+id/btnSetMeasureMode1"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_set_device_measure_mode_1" />
+
+            <Button
+                android:id="@+id/btnGetDeviceInfo"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_get_status" />
+
+            <Button
+                android:id="@+id/btnSetTime"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_sync_time" />
+
+            <Button
+                android:id="@+id/btnGetHistoryData"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_sync_data" />
+
+            <Button
+                android:id="@+id/btnDeleteHistoryData"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_delete_all_data" />
+
+            <Button
+                android:id="@+id/btnDisconnect"
+                style="@style/BtnDefaultStyle"
+                android:layout_marginTop="@dimen/function_btn_marge_top"
+                android:text="@string/function_item_button_disconnect" />
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="center_horizontal"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:visibility="gone">-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btnGetCodeBlood"-->
+<!--                        style="@style/BtnDefaultStyle"-->
+<!--                        android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                        android:text="@string/function_item_button_get_code_blood" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btnSetCodeBlood"-->
+<!--                        style="@style/BtnDefaultStyle"-->
+<!--                        android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                        android:text="@string/function_item_button_set_code_blood" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btnGetCodeUricAcid"-->
+<!--                        style="@style/BtnDefaultStyle"-->
+<!--                        android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                        android:text="@string/function_item_button_get_code_ctl" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/btnSetCodeUricAcid"-->
+<!--                        style="@style/BtnDefaultStyle"-->
+<!--                        android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                        android:text="@string/function_item_button_set_code_uric_acid" />-->
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="gone">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnSetFactory1"-->
+<!--                    style="@style/BtnDefaultStyle"-->
+<!--                    android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                    android:text="质控条模式" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnSetFactory2"-->
+<!--                    style="@style/BtnDefaultStyle"-->
+<!--                    android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                    android:text="测温模式" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnSetFactory3"-->
+<!--                    style="@style/BtnDefaultStyle"-->
+<!--                    android:layout_marginTop="@dimen/function_btn_marge_top"-->
+<!--                    android:text="标定模式" />-->
+
+<!--            </LinearLayout>-->
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

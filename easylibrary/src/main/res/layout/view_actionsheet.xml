@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_actionsheet_top_normal"
+        android:gravity="center"
+        android:textColor="@color/color_black_60"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <ScrollView
+        android:id="@+id/sLayout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        >
+        <!--fadingEdge属性表示，滚动式边缘内容是否变淡-->
+        <LinearLayout
+            android:id="@+id/lLayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="@string/btn_text_cancel"
+        android:textColor="@color/color_dialog_ios_text_blue"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>

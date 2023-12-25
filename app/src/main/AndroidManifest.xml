@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ihealth.demo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name=" android.permission.WRITE_SETTINGS" />
+
+    <uses-sdk
+        tools:overrideLibrary="no.nordicsemi.android.dfu" />
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme.NoActionBar.Application">
+
+        <!-- exported:要求必须为false，为true则会报安全异常。grantUriPermissions:true，表示授予 URI 临时访问权限。 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.demo.sdk.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".business.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0c46ff811fa040a77d7baf74057d2b42829d6309" />
+
+        <activity
+            android:name=".business.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".business.device.BG1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".business.device.BPM1"
+            android:screenOrientation="portrait" />
+        <activity android:name=".business.device.BG5" />
+        <activity android:name=".business.device.BG1S" />
+        <activity android:name=".business.device.BG1A" />
+        <activity android:name=".business.device.BG5A" />
+        <activity android:name=".business.device.BP3L" />
+        <activity android:name=".business.device.BP5" />
+        <activity android:name=".business.device.BP5S" />
+        <activity android:name=".business.device.BP7S" />
+        <activity android:name=".business.device.BP550BT" />
+        <activity android:name=".business.device.HS6" />
+        <activity android:name=".business.device.PO3" />
+        <activity android:name=".business.device.BTM" />
+        <activity android:name=".business.device.BG5S" />
+        <activity android:name=".business.device.KD723" />
+        <activity android:name=".business.device.KD926" />
+        <activity android:name=".business.device.HS2" />
+        <activity android:name=".business.device.HS3" />
+        <activity android:name=".business.device.HS2S" />
+        <activity android:name=".business.device.HS2SPRO" />
+        <activity android:name=".business.device.HS4" />
+        <activity android:name=".business.device.AM3" />
+        <activity android:name=".business.device.AM3S" />
+        <activity android:name=".business.device.AM4" />
+        <activity android:name=".business.device.AM5" />
+        <activity android:name=".business.device.TS28B" />
+        <activity android:name=".business.device.NT13B" />
+        <activity android:name=".business.device.ECG3" />
+        <activity android:name=".business.device.ECGUSB" />
+        <activity android:name=".business.device.PT3SBT" />
+        <activity android:name=".business.device.PO1" />
+        <activity android:name=".business.device.AM6" />
+
+        <service
+            android:name="com.ido.ble.bluetooth.DeviceConnectService"
+            android:exported="false" />
+
+        <service
+            android:name="com.ido.ble.dfu.DFUService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

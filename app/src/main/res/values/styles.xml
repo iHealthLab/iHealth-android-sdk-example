@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Application" parent="AppTheme.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <!-- button default style -->
+    <style name="BtnDefaultStyle" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@drawable/btn_select_color</item>
+        <item name="android:background">@drawable/btn_select</item>
+    </style>
+
+    <!-- textView default style -->
+    <style name="TextViewDefaultStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_black_30</item>
+    </style>
+
+    <style name="FunctionHeadDefaultStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/color_black_40</item>
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="FunctionIconDownStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:src">@drawable/icon_function_down_black</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="ViewAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_view_show</item>
+        <item name="android:windowExitAnimation">@anim/anim_view_dismiss</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpended">
+        <item name="android:textColor">@color/color_black_60</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutCollapsed">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

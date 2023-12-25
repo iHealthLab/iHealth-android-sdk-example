@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">ihealthSDK</string>
+    <string name="exit_warning">再点击一次退出</string>
+
+    <!--升级APP提示-->
+    <string name="network_download_done">下载完成!</string>
+    <string name="network_file_ddone">文件已下载完毕</string>
+    <string name="network_begin_download">开始下载&#8230;</string>
+    <string name="network_download_warning">apk 正在下载&#8230;</string>
+    <string name="app_update_found">发现新版本：</string>
+
+    <string name="main_title_authorization">认证</string>
+    <string name="main_title_connect">连接设备</string>
+    <string name="main_title_functions">功能</string>
+
+    <string name="main_tip_author_fail">认证失败</string>
+    <string name="main_tip_select_device">选择设备 %1$s</string>
+    <string name="main_tip_connect_fail">连接失败</string>
+
+    <string name="authorization_main_tip_title">注意事项</string>
+    <string name="authorization_main_tip_message">必须通过认证后才能使用SDK\n\n请按照顺序调用SDK\n\n更多信息请访问我们的网站： https://dev.ihealthlabs.com</string>
+    <string name="authorization_main_button_text">开始认证</string>
+    <string name="authorization_main_tip">认证失败,请检查assets文件夹下的.pem文件,或者去我们的网站申请并下载</string>
+
+    <string name="connect_main_button_text_discovery">开始搜索</string>
+    <string name="connect_main_list_scan_title">可用设备</string>
+    <string name="connect_main_button_text_disconnect">断开连接</string>
+    <string name="connect_main_tip_connected">设备已经连接上</string>
+    <string name="connect_main_tip_disconnect">设备已经断开连接</string>
+    <string name="connect_main_tip_reconnect">设备正在重新连接</string>
+    <string name="connect_main_tip_connect_fail">设备连接失败</string>
+
+    <string name="device_type_bp_name">血压计</string>
+    <string name="device_type_bg_name">血糖仪</string>
+    <string name="device_type_hs_name">体重秤</string>
+    <string name="device_type_am_name">活动跟踪仪</string>
+    <string name="device_type_tmp_name">体温计</string>
+    <string name="device_type_po_name">血氧仪</string>
+    <string name="device_type_ecg_name">心电测试仪</string>
+
+    <string name="function_item_title_measurement">测量</string>
+    <string name="function_item_title_data">数据</string>
+    <string name="function_item_title_bottle_info">试条信息</string>
+    <string name="function_item_title_get_information">设置和参数</string>
+    <string name="function_item_title_upgrade">固件升级</string>
+
+    <string name="function_item_button_authentication">开始认证</string>
+    <string name="function_item_button_connect">点击连接</string>
+    <string name="function_item_button_disconnect">断开连接</string>
+    <string name="function_item_button_measurement">开始测量</string>
+    <string name="function_item_button_measurement1">measure blood</string>
+    <string name="function_item_button_measurement2">measure ctl</string>
+    <string name="function_item_button_measurement_stop">停止测量</string>
+    <string name="function_item_button_check_function">获取设备功能</string>
+    <string name="function_item_button_get_mac">获取设备mac</string>
+    <string name="function_item_button_get_offline_data">获取离线数据</string>
+    <string name="function_item_button_delete_offline_data">删除离线数据</string>
+    <string name="function_item_button_set_offline_mode">设置离线模式</string>
+    <string name="function_item_button_get_offline_data_num">获取离线数据数目</string>
+    <string name="function_item_button_get_anonymous_data">获取匿名数据</string>
+    <string name="function_item_button_delete_anonymous_data">删除匿名数据</string>
+    <string name="function_item_button_get_anonymous_data_num">获取匿名数据数目</string>
+    <string name="function_item_button_get_online_data">获取在线数据</string>
+    <string name="function_item_button_get_battery">获取电量</string>
+    <string name="function_item_button_get_idps">获取IDPS信息</string>
+    <string name="function_item_button_set_measurement_offline_enable">允许离线测量</string>
+    <string name="function_item_button_set_measurement_offline_disable">禁止离线测量</string>
+    <string name="function_item_button_set_angle">设置角度</string>
+    <string name="function_item_button_set_unit">设置单位</string>
+    <string name="function_item_button_set_time">设置时间</string>
+    <string name="function_item_button_close_bluetooth">关闭蓝牙</string>
+    <string name="function_item_button_set_display_mode">设置显示模式</string>
+    <string name="function_item_button_restore_factory_setting">恢复出厂设置</string>
+    <string name="function_item_button_get_status">获取状态</string>
+    <string name="function_item_button_set_status_back_light">设置背光状态</string>
+    <string name="function_item_button_set_status_locking">设置锁屏状态</string>
+    <string name="function_item_button_hold_link">保持连接</string>
+    <string name="function_item_button_set_bottle_info">设置试纸信息</string>
+    <string name="function_item_button_get_bottle_info">获取试纸信息</string>
+    <string name="function_item_button_delete_bottle_info">删除试纸信息</string>
+    <string name="function_item_button_set_bottle_id">设置试纸id</string>
+    <string name="function_item_button_get_bottle_id">获取试纸id</string>
+    <string name="function_item_button_get_bottle_id_by_QR">从条码扫描试纸信息</string>
+    <string name="function_item_button_get_bg_status">获取状态</string>
+    <string name="function_item_button_get_device_info">获取设备信息</string>
+    <string name="function_item_button_set_device_measure_mode">设置测量模式</string>
+    <string name="function_item_button_set_standby_time">设置待机时间</string>
+    <string name="function_item_button_set_wifi">设置wifi</string>
+    <string name="function_item_button_bind">绑定用户</string>
+    <string name="function_item_button_unbind">解除绑定</string>
+    <string name="function_item_button_get_bind_status">获取绑定状态</string>
+    <string name="function_item_button_get_token">获取Token</string>
+    <string name="function_item_button_get_data_from_cloud">从云端获取信息</string>
+    <string name="function_item_button_reset">重置</string>
+    <string name="function_item_button_get_user_id">获取用户id</string>
+    <string name="function_item_button_get_user_info">获取用户信息</string>
+    <string name="function_item_button_set_user_id">设置用户id</string>
+    <string name="function_item_button_set_user_info">设置用户信息</string>
+    <string name="function_item_button_delete_user_info">删除用户信息</string>
+    <string name="function_item_button_specify_user_online">指定为在线用户</string>
+    <string name="function_item_button_specify_user_tourist">指定为游客用户</string>
+    <string name="function_item_button_get_alarm_num">获取闹铃数</string>
+    <string name="function_item_button_get_alarm_detail">获取闹铃详情</string>
+    <string name="function_item_button_set_alarm">设置闹铃</string>
+    <string name="function_item_button_delete_alarm">删除闹铃</string>
+    <string name="function_item_button_get_activity">获取活动提醒</string>
+    <string name="function_item_button_set_activity">设置活动提醒</string>
+    <string name="function_item_button_set_swim_target">设置游泳目标</string>
+    <string name="function_item_button_get_swim_target">获取游泳目标</string>
+    <string name="function_item_button_set_metabolic_ratio">设置代谢比</string>
+    <string name="function_item_button_sync_activity">同步活动数据</string>
+    <string name="function_item_button_sync_data">同步数据</string>
+    <string name="function_item_button_sync_sleep">同步睡眠数据</string>
+    <string name="function_item_button_sync_time">同步时间</string>
+    <string name="function_item_button_sync_report">同步报告</string>
+    <string name="function_item_button_set_time_mode">设置时间模式</string>
+    <string name="function_item_button_get_time_mode">获取时间模式</string>
+    <string name="function_item_button_set_mode">设置设备模式</string>
+    <string name="function_item_button_set_device_measure_mode_0">设置设备模式 0</string>
+    <string name="function_item_button_set_device_measure_mode_1">设置设备模式 1</string>
+    <string name="function_item_button_get_code_blood">查询血液code</string>
+    <string name="function_item_button_get_code_ctl">查询质控液code</string>
+    <string name="function_item_button_set_code_blood">设置血液code</string>
+    <string name="function_item_button_set_code_ctl">设置质控液code</string>
+    <string name="function_item_button_set_code_uric_acid">设置尿酸code</string>
+    <string name="function_item_button_set_picture">设置背景图</string>
+    <string name="function_item_button_get_picture">获取背景图</string>
+    <string name="function_item_button_get_random">发送随机码</string>
+    <string name="function_item_button_set_target">设置目标</string>
+    <string name="function_item_button_set_on_line">设置在线模式</string>
+    <string name="function_item_button_set_off_line">设置离线模式</string>
+    <string name="function_item_button_create_control">通过名字创建HS6 Control</string>
+    <string name="function_item_button_connect_mode_ble">低功耗蓝牙</string>
+    <string name="function_item_button_connect_mode_usb">USB</string>
+    <string name="function_item_button_format_sdcard">格式化SD卡</string>
+    <string name="function_item_button_delete_all_data">清除所有文件</string>
+    <string name="function_item_button_get_cache_data">从缓存获取数据</string>
+    <string name="function_item_button_get_delete_cache_data">删除缓存数据</string>
+    <string name="function_item_button_get_splice_data">拼接文件</string>
+    <string name="function_item_button_get_filter_file">生成滤波文件</string>
+
+    <string name="function_item_button_hand_wear_mode">佩戴模式</string>
+    <string name="function_item_button_heart_interval">测量心率间隔</string>
+    <string name="function_item_button_set_heart_measure_mode">设置心率模式</string>
+    <string name="function_item_button_no_disturb">设置免打扰</string>
+    <string name="function_item_button_sport_mode">设置运动模式</string>
+    <string name="function_item_button_set_sedentary_reminder">设置久坐提醒</string>
+    <string name="function_item_button_notice_new_message">设置消息提醒</string>
+    <string name="function_item_button_notice_new_message_no">关闭消息提醒</string>
+    <string name="function_item_button_notice_coming_call">设置来电提醒</string>
+    <string name="function_item_button_notice_coming_call_no">关闭来电提醒</string>
+
+    <string name="function_item_button_get_live_data">获取实时数据</string>
+    <string name="function_item_button_get_activity_count">获取活动数量</string>
+    <string name="function_item_button_sync_config_pending">同步配置到缓存</string>
+    <string name="function_item_button_sync_config">同步配置</string>
+    <string name="function_item_button_sync_config_no">停止同步配置</string>
+    <string name="function_item_button_sync_health_data">同步健康数据</string>
+    <string name="function_item_button_sync_health_data_no">停止同步健康数据</string>
+    <string name="function_item_button_sync_activity_data">同步活动数据</string>
+    <string name="function_item_button_sync_activity_data_no">停止同步活动数据</string>
+
+    <string name="function_item_text_QR_code">条形码:</string>
+    <string name="function_item_text_strip_type">试纸类型:</string>
+    <string name="function_item_text_measure_Type">测量类型:</string>
+    <string name="function_item_text_strip_num">试条可用数:</string>
+    <string name="function_item_text_over_date">过期时间:</string>
+    <string name="function_item_text_reset_id">重置用户id:</string>
+    <string name="function_item_text_set_user_id">设置用户id:</string>
+    <string name="function_item_text_user_id">用户 ID:</string>
+    <string name="function_item_text_hour">时:</string>
+    <string name="function_item_text_minute">分:</string>
+    <string name="function_item_text_second">秒:</string>
+    <string name="function_item_text_age">年龄:</string>
+    <string name="function_item_text_height">身高:</string>
+    <string name="function_item_text_weight">体重:</string>
+    <string name="function_item_text_gender">性别:</string>
+    <string name="function_item_text_is_sportsman">是否是运动员:</string>
+    <string name="function_item_text_unit">单位:</string>
+    <string name="function_item_text_target">目标:</string>
+    <string name="function_item_text_activity_level">活动级别:</string>
+    <string name="function_item_text_activity_swim_target_time">游泳目标时间:</string>
+    <string name="function_item_text_alarm_id">闹铃id:</string>
+    <string name="function_item_text_alarm_repeat">闹铃重复:</string>
+    <string name="function_item_text_alarm_day">周几响铃:</string>
+    <string name="function_item_text_alarm_is_on">闹钟打开:</string>
+    <string name="function_item_text_time_mode">时间模式:</string>
+    <string name="function_item_text_time_metabolic">代谢比:</string>
+    <string name="function_item_text_swim_pool_length">游泳池长度:</string>
+    <string name="function_item_text_swim_is_on">游泳目标打开:</string>
+    <string name="function_item_text_ssid">wifi名称:</string>
+    <string name="function_item_text_username">用户名:</string>
+    <string name="function_item_text_password">密码:</string>
+    <string name="function_item_text_device_key">Device Key:</string>
+    <string name="function_item_text_birthday">生日:</string>
+    <string name="function_item_text_serialNumber">设备号:</string>
+    <string name="function_item_text_client_id">Client Id:</string>
+    <string name="function_item_text_client_secret">Client Secret:</string>
+    <string name="function_item_text_client_random">Client Para:</string>
+    <string name="function_item_text_splice_file_name">拼接文件:</string>
+    <string name="function_item_text_filter_file_a">数据文件:</string>
+    <string name="function_item_text_filter_file_b">标记文件:</string>
+
+    <string name="function_item_button_upgrade_check_device">获取硬件信息</string>
+    <string name="function_item_button_upgrade_check_cloud">获取云端硬件信息</string>
+    <string name="function_item_button_upgrade_download">下载文件</string>
+    <string name="function_item_button_upgrade_start">开始升级</string>
+    <string name="function_item_button_upgrade_stop">停止升级</string>
+
+    <string name="log_title">日志</string>
+    <string name="status_tip_connecting">正在连接 %1$s</string>
+    <string name="dialog_tip">请按照顺序调用SDK</string>
+    <string name="authorization_fail">没有权限连接设备，请检查.pem文件</string>
+    <string name="dialog_title_connect_mode">连接方式</string>
+
+    <string name="confirm_tip_function_title">提示</string>
+    <string name="confirm_tip_function_message">是否要断开以下设备的连接?\n%1$s(mac:%2$s)</string>
+
+    <string name="confirm_tip_bg1_1">请插入BG1设备</string>
+    <string name="confirm_tip_bg1_2">请插入试条</string>
+    <string name="confirm_tip_bg1_3">请滴血</string>
+    <string name="confirm_tip_bg1_4">正在检测，请稍后</string>
+    <string name="confirm_tip_bg1_5">拔出试条再次插入可重新测量</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pt3sbt_disconnect">断开</string>
+    <string name="pt3sbt_settime">设置时间</string>
+    <string name="pt3sbt_getbattery">查询电量</string>
+    <string name="pt3sbt_setunit">设置单位</string>
+    <string name="pt3sbt_getunit">查询单位</string>
+    <string name="pt3sbt_get_history_count">查询记忆数量</string>
+    <string name="pt3sbt_get_history_data">查询记忆数据</string>
+    <string name="pt3sbt_delete_history_data">删除记忆数据</string>
+    <string name="pt3sbt_get_factory_data">查询工厂数据</string>
+
+    <string name="pt3sbt_query_device">查询固件信息</string>
+    <string name="pt3sbt_query_latest">查询最新固件</string>
+    <string name="pt3sbt_download_firmware">下载最新固件</string>
+    <string name="pt3sbt_upgrade">升级</string>
+
+    <string name="po1_battery">查询电量</string>
+    <string name="po1_buzzer">设置蜂鸣器</string>
+    <string name="po1_idps">查询IDPS</string>
+
+    <string name="hs2s_start_heartrate_mode">开始心率测量模式</string>
+    <string name="hs2s_stop_heartrate_mode">停止心率测量模式</string>
+    <string name="hs2s_ble_light">设置蓝牙灯</string>
+
+    <string name="function_set_time">设置时间</string>
+    <string name="function_get_time">获取时间</string>
+    <string name="function_transfer_finished">传输完成</string>
+
+</resources>

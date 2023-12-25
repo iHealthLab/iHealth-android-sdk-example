@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.BG5">
+
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_disconnect" />
+
+    <Button
+        android:id="@+id/btnHoldLink"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_hold_link" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_bottle_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewDefaultStyle"
+            android:text="@string/function_item_text_QR_code" />
+
+        <EditText
+            android:id="@+id/etQRCode"
+            style="@style/EditViewWithDelBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="02323C641E3114322D0800A064646464646464646464FA012261000E1CCC" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_strip_type" />
+
+            <EditText
+                android:id="@+id/etStripType"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_measure_Type" />
+
+<!--            <EditText-->
+<!--                android:id="@+id/etMeasureType"-->
+<!--                style="@style/EditViewWithDelBlack"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="2" />-->
+
+            <Spinner
+                android:id="@+id/spMeasureType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/bp_measure_type"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewDefaultStyle"
+                    android:text="@string/function_item_text_strip_num" />
+
+                <EditText
+                    android:id="@+id/etStripNum"
+                    style="@style/EditViewWithDelBlack"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewDefaultStyle"
+                    android:text="@string/function_item_text_over_date" />
+
+                <EditText
+                    android:id="@+id/etOverDate"
+                    style="@style/EditViewWithDelBlack"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="2020-5-1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGetIdByQR"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="5dp"
+        android:text="@string/function_item_button_get_bottle_id_by_QR" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetBottleId"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_set_bottle_id" />
+
+        <Button
+            android:id="@+id/btnGetBottleId"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_get_bottle_id" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetBottleInfo"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_set_bottle_info" />
+
+        <Button
+            android:id="@+id/btnGetBottleInfo"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_get_bottle_info" />
+    </LinearLayout>
+
+    <ImageView style="@style/FunctionIconDownStyle" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_measurement" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMeasurement"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:enabled="false"
+            android:text="measure blood" />
+
+        <Button
+            android:id="@+id/btnMeasurement2"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:enabled="false"
+            android:text="measure ctl" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_get_information" />
+
+
+    <Button
+        android:id="@+id/btnBattery"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_get_battery" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetUnit"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_set_unit" />
+
+        <Button
+            android:id="@+id/btnSetUnit2"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_set_unit" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSetTime"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_set_time" />
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_data" />
+
+
+    <Button
+        android:id="@+id/btnGetData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_offline_data" />
+
+    <Button
+        android:id="@+id/btnDeleteData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_delete_offline_data" />
+
+</LinearLayout>
+

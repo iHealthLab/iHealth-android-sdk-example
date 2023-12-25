@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.PT3SBT">
+
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/pt3sbt_disconnect" />
+
+    <Button
+        android:id="@+id/btn_settime"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_settime" />
+
+    <Button
+        android:id="@+id/btn_getbattery"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_getbattery" />
+
+    <Button
+        android:id="@+id/btn_setunit"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_setunit" />
+
+    <Button
+        android:id="@+id/btn_getunit"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_getunit" />
+
+    <Button
+        android:id="@+id/btn_get_history_count"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_get_history_count" />
+
+    <Button
+        android:id="@+id/btn_get_history_data"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_get_history_data" />
+
+    <Button
+        android:id="@+id/btn_delete_data"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_delete_history_data" />
+
+    <Button
+        android:id="@+id/btn_get_factory_data"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_get_factory_data" />
+
+    <Button
+        android:id="@+id/btn_query_device"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_query_device" />
+
+    <Button
+        android:id="@+id/btn_query_latest"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_query_latest" />
+
+    <Button
+        android:id="@+id/btn_download_firmware"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_download_firmware" />
+
+    <Button
+        android:id="@+id/btn_upgrade"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/pt3sbt_upgrade" />
+
+</LinearLayout>

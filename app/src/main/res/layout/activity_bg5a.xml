@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.BG5A">
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_disconnect" />
+
+    <Button
+        android:id="@+id/btnGetStatus"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_get_bg_status" />
+
+    <Button
+        android:id="@+id/btnMeasurement"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_measurement1" />
+
+    <Button
+        android:id="@+id/btnMeasurement2"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_measurement2" />
+
+    <Button
+        android:id="@+id/btnMeasurement3"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_measurement2" />
+
+    <Button
+        android:id="@+id/btnSetTime"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_time" />
+
+    <Button
+        android:id="@+id/btnSetUnit"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_unit" />
+
+    <Button
+        android:id="@+id/btnSetUnit2"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_unit" />
+
+    <Button
+        android:id="@+id/btnOfflineMeasureEnable"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_measurement_offline_enable" />
+
+    <Button
+        android:id="@+id/btnOfflineMeasureDisable"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_measurement_offline_disable" />
+
+    <Button
+        android:id="@+id/btnDeleteData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_delete_offline_data" />
+
+    <Button
+        android:id="@+id/btnGetData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_get_offline_data" />
+
+    <Button
+        android:id="@+id/btnCloseBluetooth"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_close_bluetooth" />
+
+    <Button
+        android:id="@+id/btnEnableDisplay"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_display_mode" />
+
+    <Button
+        android:id="@+id/btnDisableDisplay"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/device_main_item_padding"
+        android:text="@string/function_item_button_set_display_mode" />
+
+</LinearLayout>
+

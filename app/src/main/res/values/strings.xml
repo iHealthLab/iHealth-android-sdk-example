@@ -1,0 +1,293 @@
+<resources>
+    <string name="app_name">ihealthSDK</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+
+    <string name="title_activity_abi">ABI</string>
+    <string name="title_activity_am3">AM3</string>
+    <string name="title_activity_am3s">AM3S</string>
+    <string name="title_activity_am4">AM4</string>
+    <string name="title_activity_bg1">BG1</string>
+    <string name="title_activity_bg1s">BG1S</string>
+    <string name="title_activity_bg5">BG5</string>
+    <string name="title_activity_bp3l">BP3L</string>
+    <string name="title_activity_bp3m">BP3M</string>
+    <string name="title_activity_bp5">BP5</string>
+    <string name="title_activity_bp5s">BP5S</string>
+    <string name="title_activity_bp7">BP7</string>
+    <string name="title_activity_bp7s">BP7S</string>
+    <string name="title_activity_bp550_bt">BP550BT</string>
+    <string name="title_activity_hs3">HS3</string>
+    <string name="title_activity_hs4">HS4</string>
+    <string name="title_activity_hs4s">HS4S</string>
+    <string name="title_activity_hs5_bt">HS5BT</string>
+    <string name="title_activity_hs5_wifi">HS5WIFI</string>
+    <string name="title_activity_hs6">HS6</string>
+    <string name="title_activity_po3">PO3</string>
+    <string name="title_activity_btm">BTM</string>
+    <string name="title_activity_kd926">KD926</string>
+    <string name="title_activity_kd723">KD723</string>
+    <string name="title_activity_bg5s">BG5S</string>
+
+    <string name="bluetooth_devicelist_dialog_ssid">SSID:</string>
+    <string name="bluetooth_devicelist_dialog_type">Type:</string>
+    <string name="bluetooth_devicelist_dialog_password">Password:</string>
+    <string name="bluetooth_devicelist_dialog_deviceKey">DeviceKey:</string>
+    <string name="bluetooth_setwifi_title">set Wi-Fi</string>
+
+
+    <string name="exit_warning">Click again to exit</string>
+
+    <!--升级APP提示-->
+    <string name="network_download_done">Download completion!</string>
+    <string name="network_file_ddone">The file has been downloaded.</string>
+    <string name="network_begin_download">Start downloading&#8230;</string>
+    <string name="network_download_warning">Apk is Downloading &#8230;</string>
+    <string name="app_update_found">Discover new version：</string>
+
+    <string name="main_title_authorization">Authorization</string>
+    <string name="main_title_connect">Connect device</string>
+    <string name="main_title_functions">Functions</string>
+
+    <string name="main_tip_author_fail">Authorization failed</string>
+    <string name="main_tip_select_device">Select device %1$s</string>
+    <string name="main_tip_connect_fail">Connection failed</string>
+
+    <string name="authorization_main_tip_title">Attention</string>
+    <string name="authorization_main_tip_message">You can use SDK only after pass the authorization \n \n According to the order,please call the SDK. \n \n Get more information at https://dev.ihealthlabs.com</string>
+    <string name="authorization_main_button_text">Authorization</string>
+    <string name="authorization_main_tip">Authorization failed,please check the .pen file in assets or apply to our website and download it.</string>
+
+    <string name="connect_main_button_text_discovery">startDiscovery</string>
+    <string name="connect_main_list_scan_title">Available devices</string>
+    <string name="connect_main_button_text_disconnect">Disconnect</string>
+    <string name="connect_main_tip_connected">The device is connected.</string>
+    <string name="connect_main_tip_disconnect">The device has been disconnected.</string>
+    <string name="connect_main_tip_reconnect">The device is reconnecting.</string>
+    <string name="connect_main_tip_connect_fail">Device connection failure.</string>
+
+    <string name="device_type_bp_name">Blood pressure monitors</string>
+    <string name="device_type_bg_name">Glucose Meters</string>
+    <string name="device_type_hs_name">Scales</string>
+    <string name="device_type_am_name">Activity Trackers</string>
+    <string name="device_type_tmp_name">Thermometers</string>
+    <string name="device_type_po_name">Pulse Oximeter</string>
+    <string name="device_type_ecg_name">Portable ECG monitor</string>
+
+    <string name="function_item_title_measurement">Measurement</string>
+    <string name="function_item_title_data">Data</string>
+    <string name="function_item_title_bottle_info">Bottle Info</string>
+    <string name="function_item_title_get_information">Settings and Parameters</string>
+    <string name="function_item_title_upgrade">UpGrade</string>
+
+    <string name="function_item_button_authentication">Authentication</string>
+    <string name="function_item_button_connect">Click to connect</string>
+    <string name="function_item_button_disconnect">Disconnect</string>
+    <string name="function_item_button_measurement">StartMeasure</string>
+    <string name="function_item_button_measurement1">measure blood</string>
+    <string name="function_item_button_measurement2">measure ctl</string>
+    <string name="function_item_button_measurement_stop">StopMeasure</string>
+    <string name="function_item_button_check_function">Check Device function</string>
+    <string name="function_item_button_get_mac">set Device mac</string>
+    <string name="function_item_button_get_offline_data">Get Offline Data</string>
+    <string name="function_item_button_delete_offline_data">Delete Offline Data</string>
+    <string name="function_item_button_set_offline_mode">Set Offline Mode</string>
+    <string name="function_item_button_get_offline_data_num">Get Offline Data Num</string>
+    <string name="function_item_button_get_anonymous_data">Get Anonymous Data</string>
+    <string name="function_item_button_delete_anonymous_data">Delete Anonymous Data</string>
+    <string name="function_item_button_get_anonymous_data_num">Get Anonymous Data Num</string>
+    <string name="function_item_button_get_online_data">Get Online Data</string>
+    <string name="function_item_button_get_battery">Get Battery</string>
+    <string name="function_item_button_get_idps">Get IDPS</string>
+    <string name="function_item_button_set_measurement_offline_enable">Enable Offline Measure</string>
+    <string name="function_item_button_set_measurement_offline_disable">Disable Offline Measure</string>
+    <string name="function_item_button_set_angle">Set Angle</string>
+    <string name="function_item_button_set_unit">Set Unit</string>
+    <string name="function_item_button_set_time">Set Time</string>
+    <string name="function_item_button_close_bluetooth">Close Bluetooth</string>
+    <string name="function_item_button_set_display_mode">Set Display mode</string>
+    <string name="function_item_button_restore_factory_setting">Restore Factory Setting</string>
+    <string name="function_item_button_get_status">Get Status</string>
+    <string name="function_item_button_set_status_back_light">Set back light Status</string>
+    <string name="function_item_button_set_status_locking">Set Locking Status</string>
+    <string name="function_item_button_hold_link">Hold Link</string>
+    <string name="function_item_button_set_bottle_info">Set Bottle Info</string>
+    <string name="function_item_button_get_bottle_info">Get Bottle Info</string>
+    <string name="function_item_button_delete_bottle_info">Delete bottle info</string>
+    <string name="function_item_button_set_bottle_id">Set Bottle Id</string>
+    <string name="function_item_button_get_bottle_id">Get Bottle Id</string>
+    <string name="function_item_button_get_code_blood">query blood code</string>
+    <string name="function_item_button_get_code_ctl">query ctl code</string>
+    <string name="function_item_button_set_code_blood">set blood code</string>
+    <string name="function_item_button_set_code_ctl">set ctl code</string>
+    <string name="function_item_button_set_code_uric_acid">set uric acid code</string>
+    <string name="function_item_button_get_bottle_id_by_QR">Get bottle id from QR</string>
+    <string name="function_item_button_get_bg_status">Get Status</string>
+    <string name="function_item_button_get_device_info">Get Device Info</string>
+    <string name="function_item_button_set_device_measure_mode">Set Measure Mode</string>
+    <string name="function_item_button_set_device_measure_mode_0">Set Measure Mode 0</string>
+    <string name="function_item_button_set_device_measure_mode_1">Set Measure Mode 1</string>
+    <string name="function_item_button_set_standby_time">Set Standby time</string>
+    <string name="function_item_button_set_wifi">Set Wifi</string>
+    <string name="function_item_button_bind">Bind</string>
+    <string name="function_item_button_unbind">Unbind</string>
+    <string name="function_item_button_get_bind_status">Get Bind Status</string>
+    <string name="function_item_button_get_token">Get Token</string>
+    <string name="function_item_button_get_data_from_cloud">Get Data From Cloud</string>
+    <string name="function_item_button_reset">Reset</string>
+    <string name="function_item_button_get_user_id">Get UserId</string>
+    <string name="function_item_button_get_user_info">Get UserInfo</string>
+    <string name="function_item_button_set_user_id">Set UserId</string>
+    <string name="function_item_button_set_user_info">Set UserInfo</string>
+    <string name="function_item_button_delete_user_info">Delete UserInfo</string>
+    <string name="function_item_button_specify_user_online">Specify User Online</string>
+    <string name="function_item_button_specify_user_tourist">Specify User Tourist</string>
+    <string name="function_item_button_get_alarm_num">Get Alarm Num</string>
+    <string name="function_item_button_get_alarm_detail">Get Alarm Detail</string>
+    <string name="function_item_button_set_alarm">Set Alarm</string>
+    <string name="function_item_button_delete_alarm">Delete Alarm</string>
+    <string name="function_item_button_get_activity">Get Activity</string>
+    <string name="function_item_button_set_activity">Set Activity</string>
+    <string name="function_item_button_set_swim_target">Set Swim Target</string>
+    <string name="function_item_button_get_swim_target">Get Swim Target</string>
+    <string name="function_item_button_set_metabolic_ratio">Set Metabolic</string>
+    <string name="function_item_button_sync_activity">Sync activity</string>
+    <string name="function_item_button_sync_data">Sync Data</string>
+    <string name="function_item_button_sync_sleep">Sync Sleep</string>
+    <string name="function_item_button_sync_time">Sync Time</string>
+    <string name="function_item_button_sync_report">Sync Report</string>
+    <string name="function_item_button_set_time_mode">Set Time Mode</string>
+    <string name="function_item_button_get_time_mode">Get Time Mode</string>
+    <string name="function_item_button_set_mode">Set Mode</string>
+    <string name="function_item_button_set_picture">Set Picture</string>
+    <string name="function_item_button_get_picture">Get Picture</string>
+    <string name="function_item_button_get_random">Send Random</string>
+    <string name="function_item_button_set_target">Set Target</string>
+    <string name="function_item_button_set_on_line">Set Online</string>
+    <string name="function_item_button_set_off_line">Set Offline</string>
+    <string name="function_item_button_create_control">Create HS6 Control By Name</string>
+    <string name="function_item_button_connect_mode_ble">Bluetooth Low Energy</string>
+    <string name="function_item_button_connect_mode_usb">USB</string>
+    <string name="function_item_button_format_sdcard">Format SDCard</string>
+    <string name="function_item_button_delete_all_data">Delete All Data</string>
+    <string name="function_item_button_get_cache_data">Get Cache Data</string>
+    <string name="function_item_button_get_delete_cache_data">Delete Cache Data</string>
+    <string name="function_item_button_get_splice_data">Splice Data</string>
+    <string name="function_item_button_get_filter_file">Get Filter File</string>
+
+    <string name="function_item_button_hand_wear_mode">Set Wear Mode</string>
+    <string name="function_item_button_heart_interval">Set Heart Interval</string>
+    <string name="function_item_button_set_heart_measure_mode">Set Heart Measure Mode</string>
+    <string name="function_item_button_no_disturb">Set No Disturb</string>
+    <string name="function_item_button_sport_mode">Set Sport Mode</string>
+    <string name="function_item_button_set_sedentary_reminder">Set Sedentary Reminder</string>
+    <string name="function_item_button_notice_new_message">Set Message Notice </string>
+    <string name="function_item_button_notice_new_message_no">Close Message Notice</string>
+    <string name="function_item_button_notice_coming_call">Set Call Notice</string>
+    <string name="function_item_button_notice_coming_call_no">Close Call Notice</string>
+
+    <string name="function_item_button_get_live_data">Get Live Data</string>
+    <string name="function_item_button_get_activity_count">Get Activity count</string>
+    <string name="function_item_button_sync_config_pending">Sync Config Pending</string>
+    <string name="function_item_button_sync_config">Sync Config</string>
+    <string name="function_item_button_sync_config_no">Stop Sync Config</string>
+    <string name="function_item_button_sync_health_data">Sync Health data</string>
+    <string name="function_item_button_sync_health_data_no">Stop Sync Health Data</string>
+    <string name="function_item_button_sync_activity_data">Sync Activity Data</string>
+    <string name="function_item_button_sync_activity_data_no">Stop Activity Data</string>
+
+    <string name="function_item_text_QR_code">QR Code:</string>
+    <string name="function_item_text_strip_type">Strip type:</string>
+    <string name="function_item_text_measure_Type">measure type:</string>
+    <string name="function_item_text_strip_num">Strip num:</string>
+    <string name="function_item_text_over_date">Over date:</string>
+    <string name="function_item_text_reset_id">Reset userId:</string>
+    <string name="function_item_text_set_user_id">Set userId:</string>
+    <string name="function_item_text_user_id">User ID:</string>
+    <string name="function_item_text_hour">Hour:</string>
+    <string name="function_item_text_minute">Minute:</string>
+    <string name="function_item_text_second">Second:</string>
+    <string name="function_item_text_age">Age:</string>
+    <string name="function_item_text_height">Height:</string>
+    <string name="function_item_text_weight">Weight:</string>
+    <string name="function_item_text_gender">Gender:</string>
+    <string name="function_item_text_is_sportsman">Is Sportsman:</string>
+    <string name="function_item_text_unit">Unit:</string>
+    <string name="function_item_text_target">Target:</string>
+    <string name="function_item_text_activity_level">Activity Level:</string>
+    <string name="function_item_text_activity_swim_target_time">Swim Target Time:</string>
+    <string name="function_item_text_alarm_id">Alarm id:</string>
+    <string name="function_item_text_alarm_repeat">Alarm repeat:</string>
+    <string name="function_item_text_alarm_day">Alarm Day:</string>
+    <string name="function_item_text_alarm_is_on">Alarm Open:</string>
+    <string name="function_item_text_time_mode">Time Mode:</string>
+    <string name="function_item_text_time_metabolic">Metabolic:</string>
+    <string name="function_item_text_swim_pool_length">Pool Length:</string>
+    <string name="function_item_text_swim_is_on">Swim Target Open:</string>
+    <string name="function_item_text_ssid">SSID:</string>
+    <string name="function_item_text_username">User Name:</string>
+    <string name="function_item_text_password">Password:</string>
+    <string name="function_item_text_device_key">Device Key:</string>
+    <string name="function_item_text_birthday">Birthday:</string>
+    <string name="function_item_text_serialNumber">SerialNumber:</string>
+    <string name="function_item_text_client_id">Client Id:</string>
+    <string name="function_item_text_client_secret">Client Secret:</string>
+    <string name="function_item_text_client_random">Client Para:</string>
+    <string name="function_item_text_splice_file_name">Splice Files Names:</string>
+    <string name="function_item_text_filter_file_a">Filter Data File:</string>
+    <string name="function_item_text_filter_file_b">Filter Mark File:</string>
+
+    <string name="function_item_button_upgrade_check_device">Get firmware version</string>
+    <string name="function_item_button_upgrade_check_cloud">Get version from cloud</string>
+    <string name="function_item_button_upgrade_download">Download file</string>
+    <string name="function_item_button_upgrade_start">Start upgrade</string>
+    <string name="function_item_button_upgrade_stop">Stop upgrade</string>
+
+    <string name="log_title">Log information</string>
+    <string name="status_tip_connecting">Connecting %1$s</string>
+    <string name="dialog_tip">Please call SDK in sequence.</string>
+    <string name="authorization_fail">Haven’t permission to connect this device or the mac is not valid</string>
+    <string name="dialog_title_connect_mode">Connect Mode</string>
+
+    <string name="confirm_tip_function_title">Tip</string>
+    <string name="confirm_tip_function_message">Do you want to disconnect the device?\n%1$s(mac:%2$s)</string>
+
+    <string name="confirm_tip_bg1_1">please plug in the BG1 device</string>
+    <string name="confirm_tip_bg1_2">please plug strip</string>
+    <string name="confirm_tip_bg1_3">Please drop blood</string>
+    <string name="confirm_tip_bg1_4">Checking, please wait.</string>
+    <string name="confirm_tip_bg1_5">Pull-out bar is inserted again to be remeasured.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pt3sbt_disconnect">Disconnect</string>
+    <string name="pt3sbt_settime">Set Time</string>
+    <string name="pt3sbt_getbattery">Get Battery</string>
+    <string name="pt3sbt_setunit">Set Unit</string>
+    <string name="pt3sbt_getunit">Get Unit</string>
+    <string name="pt3sbt_get_history_count">Get History Count</string>
+    <string name="pt3sbt_get_history_data">Get History Data</string>
+    <string name="pt3sbt_delete_history_data">Delete History Data</string>
+    <string name="pt3sbt_get_factory_data">Get Factory Data</string>
+
+    <string name="pt3sbt_query_device">check device firmware info</string>
+    <string name="pt3sbt_query_latest">request latest firmware</string>
+    <string name="pt3sbt_download_firmware">download latest firmware</string>
+    <string name="pt3sbt_upgrade">request latest firmware</string>
+
+    <string name="po1_battery">Get Battery</string>
+    <string name="po1_buzzer">Set Buzzer</string>
+    <string name="po1_idps">Get IDPS</string>
+
+    <string name="hs2s_start_heartrate_mode">start heartrate mode</string>
+    <string name="hs2s_stop_heartrate_mode">stop heartrate mode</string>
+    <string name="hs2s_ble_light">Set ble light</string>
+
+    <string name="function_set_time">Set time</string>
+    <string name="function_get_time">Get time</string>
+    <string name="function_transfer_finished">Transfer Finished</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="80dp">
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_upgrade" />
+
+    <Button
+        android:id="@+id/btnCheckDevice"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_upgrade_check_device" />
+
+    <ImageView style="@style/FunctionIconDownStyle" />
+
+    <Button
+        android:id="@+id/btnCheckCloud"
+        style="@style/BtnDefaultStyle"
+        android:enabled="false"
+        android:text="@string/function_item_button_upgrade_check_cloud" />
+
+    <ImageView style="@style/FunctionIconDownStyle" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        style="@style/BtnDefaultStyle"
+        android:enabled="false"
+        android:text="@string/function_item_button_upgrade_download" />
+
+    <ImageView style="@style/FunctionIconDownStyle" />
+
+    <Button
+        android:id="@+id/btnUpgrade"
+        style="@style/BtnDefaultStyle"
+        android:enabled="false"
+        android:text="@string/function_item_button_upgrade_start" />
+
+    <ImageView
+        android:id="@+id/imgStopUpGrade"
+        style="@style/FunctionIconDownStyle" />
+
+    <Button
+        android:id="@+id/btnStopUpgrade"
+        style="@style/BtnDefaultStyle"
+        android:enabled="false"
+        android:text="@string/function_item_button_upgrade_stop"
+        />
+
+
+</LinearLayout>

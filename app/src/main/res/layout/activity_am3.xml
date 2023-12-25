@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.AM3S">
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_disconnect" />
+
+    <Button
+        android:id="@+id/btnGetUserId"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_user_id" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewDefaultStyle"
+                android:text="@string/function_item_text_reset_id" />
+
+            <EditText
+                android:id="@+id/etResetId"
+                style="@style/EditViewWithDelBlack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_reset" />
+    </LinearLayout>
+
+</LinearLayout>
+

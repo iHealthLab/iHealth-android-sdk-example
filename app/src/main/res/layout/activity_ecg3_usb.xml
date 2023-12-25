@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.HS4">
+
+
+    <Button
+        android:id="@+id/btnIDPS"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_get_idps" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_get_information" />
+
+    <Button
+        android:id="@+id/btnFormatSDCard"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_format_sdcard" />
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_data" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSyncData"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_sync_data" />
+
+        <Button
+            android:id="@+id/btnGetCacheData"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_get_cache_data" />
+    </LinearLayout>
+
+    <ImageView style="@style/FunctionIconDownStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewDefaultStyle"
+            android:text="@string/function_item_text_splice_file_name" />
+
+        <EditText
+            android:id="@+id/etSpliceFilesName"
+            style="@style/EditViewWithDelBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btnSpliceData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="5dp"
+        android:text="@string/function_item_button_get_splice_data" />
+
+    <ImageView style="@style/FunctionIconDownStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewDefaultStyle"
+            android:text="@string/function_item_text_filter_file_a" />
+
+        <EditText
+            android:id="@+id/etFilterFileA"
+            style="@style/EditViewWithDelBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewDefaultStyle"
+            android:text="@string/function_item_text_filter_file_b" />
+
+        <EditText
+            android:id="@+id/etFilterFileB"
+            style="@style/EditViewWithDelBlack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btnGetFilterFiles"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="5dp"
+        android:text="@string/function_item_button_get_filter_file" />
+
+    <Button
+        android:id="@+id/btnDeleteAllData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_delete_all_data" />
+
+    <Button
+        android:id="@+id/btnDeleteCacheData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_delete_cache_data" />
+
+
+    <include layout="@layout/layout_fuction_upgrade" />
+
+</LinearLayout>
+

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ihealth.sdk.BP5S"
+    tools:showIn="@layout/activity_bp5s">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_getBattery_bp5s"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Battery" />
+
+            <Button
+                android:id="@+id/btn_getFunctionInfo_bp5s"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Get Function" />
+
+            <Button
+                android:id="@+id/btn_setModeToB"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Set Mode 1:To B" />
+
+            <Button
+                android:id="@+id/btn_setModeToC"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Set Mode 2:To C" />
+            <!--<Button-->
+            <!--android:id="@+id/btn_setBluetoothOpen_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Set Bluetooth Open Often" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_setBluetoothManual_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Set Bluetooth Open Manual" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_setMeasureOffline_open_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Set Measure Offline open" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_setMeasureOffline_close_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Set Measure Offline close" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_setUnit_mmHg_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Set Unit mmHg" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_setUnit_kpa_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text="Set Unit kPa" />-->
+
+            <Button
+                android:id="@+id/btn_start_measure"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Start Measure" />
+
+            <Button
+                android:id="@+id/btn_stop_measure"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Stop Measure" />
+
+            <Button
+                android:id="@+id/btn_getOfflineDataNum_bp5s"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="GetOfflineDataNum" />
+
+            <Button
+                android:id="@+id/btn_getOfflineData_bp5s"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="GetOfflineData" />
+
+            <Button
+                android:id="@+id/btn_delete_data_bp5s"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="Delete History Data" />
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_setRepeatedlyMeasureParameter_bp5s"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            android:text="setRepeatedlyMeasureParameter" />
+
+
+            <Button
+                android:id="@+id/btn_disconnect_bp5s"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="disconnect" />
+
+            <!--<TextView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="自升级部分"/>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<Button-->
+            <!--android:id="@+id/changeService_Bp5s"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="changeService" />-->
+            <!--<EditText-->
+            <!--android:id="@+id/Service_Bp5s"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="服务器1or404"-->
+            <!--android:inputType="number"/>-->
+
+
+            <!--</LinearLayout>-->
+
+            <!--<Button-->
+            <!--android:id="@+id/checkInfoFormCloudAndDevice_Bp5s"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="checkInfoFormCloudAndDevice" />-->
+            <!--<Button-->
+            <!--android:id="@+id/startUpgrade_Bp5s"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="startUpgrade" />-->
+            <!--<Button-->
+            <!--android:id="@+id/stopUpgrade_Bp5s"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="stopUpgrade" />-->
+            <!--<Button-->
+            <!--android:id="@+id/checkIsUpgrade_Bp5s"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="checkIsUpgrade" />-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_query_device_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="queryDeviceInfo" />
+
+                    <Button
+                        android:id="@+id/btn_query_cloud_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="queryCloudInfo" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_download_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="downloadFile" />
+
+                    <Button
+                        android:id="@+id/btn_stop_download"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="stopDownload" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_start_upgrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="startUpgrade" />
+
+                    <Button
+                        android:id="@+id/btn_stop_upgrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="stopUpgrade" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_isUpgrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="isUpgrade" />
+
+                    <Button
+                        android:id="@+id/btn_delete_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="deleteFile" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/tv_returnMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+</LinearLayout>

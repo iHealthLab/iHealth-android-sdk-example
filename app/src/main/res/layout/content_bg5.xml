@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ihealth.sdk.BG5"
+    tools:showIn="@layout/activity_bg5"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_getBattery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getBattery" />
+
+            <Button
+                android:id="@+id/btn_syncTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="syncTime" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_syncUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="syncUnit" />
+
+            <Button
+                android:id="@+id/btn_getBottleId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getBottleId" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_getOfflineData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getOfflineData" />
+
+            <Button
+                android:id="@+id/btn_deleteOfflineData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deleteOfflineData" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_getCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getCode" />
+
+            <Button
+                android:id="@+id/btn_sendQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sendQRCode" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_setBottleMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="setBottleMessage" />
+
+            <Button
+                android:id="@+id/btn_startMeasure1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="measure ctl" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_startMeasure2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="measure blood" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_holdLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="holdLink" />
+
+            <Button
+                android:id="@+id/btn_disconnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="disconnect" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/btn_analyse_code_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="analyseCodeInfo" />
+            <Button
+                android:id="@+id/btn_set_bottleid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="setBottleId" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_msgReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="result message" />
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".business.device.HS2">
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        style="@style/BtnDefaultStyle"
+        android:text="@string/function_item_button_disconnect" />
+
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_get_information" />
+
+    <Button
+        android:id="@+id/btnIDPS"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_idps" />
+
+
+    <Button
+        android:id="@+id/btnGetDeviceInfo"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_device_info" />
+
+
+    <Button
+        android:id="@+id/btnBattery"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_get_battery" />
+
+    <Button
+        android:id="@+id/btnRestore"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_button_restore_factory_setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetUnit"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:layout_weight="1"
+            android:text="@string/function_item_button_set_unit" />
+
+        <Button
+            android:id="@+id/btnSetUnit2"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:layout_weight="1"
+            android:text="@string/function_item_button_set_unit" />
+
+        <Button
+            android:id="@+id/btnSetUnit3"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:layout_weight="1"
+            android:text="@string/function_item_button_set_unit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSetUserInfo"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:layout_weight="1"
+            android:text="@string/function_item_button_set_user_info" />
+
+        <Button
+            android:id="@+id/btnGetUserInfo"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:layout_weight="1"
+            android:text="@string/function_item_button_get_user_info" />
+
+        <Button
+            android:id="@+id/btnDeleteUserInfo"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:layout_weight="1"
+            android:text="@string/function_item_button_delete_user_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSpecifyUserOnline"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_specify_user_online" />
+
+        <Button
+            android:id="@+id/btnSpecifyUserTourist"
+            style="@style/BtnDefaultStyle"
+            android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+            android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+            android:text="@string/function_item_button_specify_user_tourist" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartHeartRateMode"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/hs2s_start_heartrate_mode" />
+
+    <Button
+        android:id="@+id/btnStopHeartRateMode"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/hs2s_stop_heartrate_mode" />
+
+    <Button
+        android:id="@+id/btnSetBleLight"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/hs2s_ble_light" />
+
+    <TextView
+        style="@style/FunctionHeadDefaultStyle"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:text="@string/function_item_title_data" />
+
+
+    <Button
+        android:id="@+id/btnGetOfflineDataNum"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_get_offline_data_num" />
+
+    <Button
+        android:id="@+id/btnGetOfflineData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_get_offline_data" />
+
+    <Button
+        android:id="@+id/btnDeleteOfflineData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_delete_offline_data" />
+
+
+    <Button
+        android:id="@+id/btnGetAnonymousDataNum"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_get_anonymous_data_num" />
+
+    <Button
+        android:id="@+id/btnGetAnonymousData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_get_anonymous_data" />
+
+    <Button
+
+        android:id="@+id/btnDeleteAnonymousData"
+        style="@style/BtnDefaultStyle"
+        android:layout_marginLeft="@dimen/function_btn_marge_left_or_right"
+        android:layout_marginTop="@dimen/function_btn_marge_top"
+        android:layout_marginRight="@dimen/function_btn_marge_left_or_right"
+        android:text="@string/function_item_button_delete_anonymous_data" />
+
+    <include layout="@layout/layout_fuction_upgrade" />
+
+</LinearLayout>
