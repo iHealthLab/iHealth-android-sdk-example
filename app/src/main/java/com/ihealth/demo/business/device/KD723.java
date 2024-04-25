@@ -4,17 +4,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
+import android.text.format.DateFormat;
 import android.view.KeyEvent;
 import android.view.View;
 
 import com.ec.easylibrary.dialog.confirm.ConfirmDialog;
 import com.ec.easylibrary.utils.ToastUtils;
 import com.ihealth.communication.control.Bp723Control;
-import com.ihealth.communication.control.Bp926Control;
 import com.ihealth.communication.control.BpProfile;
 import com.ihealth.communication.manager.iHealthDevicesCallback;
 import com.ihealth.communication.manager.iHealthDevicesManager;
+import com.ihealth.communication.utils.Log;
 import com.ihealth.demo.R;
 import com.ihealth.demo.business.FunctionFoldActivity;
 
@@ -33,7 +33,7 @@ public class KD723 extends FunctionFoldActivity {
 
     @Override
     public int contentViewID() {
-        return R.layout.activity_kd926;
+        return R.layout.activity_kd723;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class KD723 extends FunctionFoldActivity {
         /* register ihealthDevicesCallback id */
         mClientCallbackId = iHealthDevicesManager.getInstance().registerClientCallback(miHealthDevicesCallback);
         /* Limited wants to receive notification specified device */
-        iHealthDevicesManager.getInstance().addCallbackFilterForDeviceType(mClientCallbackId, iHealthDevicesManager.TYPE_KD926);
+        iHealthDevicesManager.getInstance().addCallbackFilterForDeviceType(mClientCallbackId, iHealthDevicesManager.TYPE_KD723);
         /* Get bp550bt controller */
         mBp723Control = iHealthDevicesManager.getInstance().getBp723Control(mDeviceMac);
 //        setDeviceInfo(mDeviceName, mDeviceMac);
@@ -76,7 +76,7 @@ public class KD723 extends FunctionFoldActivity {
             Log.i(TAG, "mac: " + mac);
             Log.i(TAG, "deviceType: " + deviceType);
             Log.i(TAG, "action: " + action);
-            Log.i(TAG, "message: " + message);
+            Log.json(TAG, "message: " + message);
 
             if (BpProfile.ACTION_BATTERY_CBP.equals(action)) {
                 try {
@@ -96,17 +96,35 @@ public class KD723 extends FunctionFoldActivity {
                 try {
                     JSONObject info = new JSONObject(message);
                     if (info.has(BpProfile.HISTORY_DATA_CBP)) {
-                        JSONObject obj = info.getJSONObject(BpProfile.HISTORY_DATA_CBP);
-                        double sys = obj.getDouble(BpProfile.CBPINFO_SYS);
-                        double dia = obj.getDouble(BpProfile.CBPINFO_DIA);
-                        str = "highPressure:" + sys + "\n"
-                                + "lowPressure:" + dia + "\n";
-                        Message msg = new Message();
-                        msg.what = HANDLER_MESSAGE;
-                        msg.obj = str;
-                        myHandler.sendMessage(msg);
+//                        JSONObject obj = info.getJSONObject(BpProfile.HISTORY_DATA_CBP);
+//                        double sys = obj.getDouble(BpProfile.CBPINFO_SYS);
+//                        double dia = obj.getDouble(BpProfile.CBPINFO_DIA);
+//                        str = "highPressure:" + sys + "\n"
+//                                + "lowPressure:" + dia + "\n";
+//                        Message msg = new Message();
+//                        msg.what = HANDLER_MESSAGE;
+//                        msg.obj = str;
+//                        myHandler.sendMessage(msg);
+                        JSONArray array = info.getJSONArray(BpProfile.HISTORY_DATA_CBP);
+                        for (int i = 0; i < array.length(); i++) {
+                            JSONObject obj = array.getJSONObject(i);
+                            String date = obj.getString(BpProfile.MEASUREMENT_DATE_BP);
+                            String hightPressure = obj.getString(BpProfile.HIGH_BLOOD_PRESSURE_BP);
+                            String lowPressure = obj.getString(BpProfile.LOW_BLOOD_PRESSURE_BP);
+                            String pulseWave = obj.getString(BpProfile.PULSE_BP);
+                            String ahr = obj.getString(BpProfile.IRREGULAR);
+                            str = "date:" + date
+                                    + "hightPressure:" + hightPressure + "\n"
+                                    + "lowPressure:" + lowPressure + "\n"
+                                    + "pulseWave" + pulseWave + "\n"
+                                    + "ahr:" + ahr + "\n";
+                            Message msg = new Message();
+                            msg.what = HANDLER_MESSAGE;
+                            msg.obj = str;
+                            myHandler.sendMessage(msg);
+                        }
 
-                    }else {
+                    } else {
                         Message msg = new Message();
                         msg.what = HANDLER_MESSAGE;
                         msg.obj = str;
@@ -141,9 +159,10 @@ public class KD723 extends FunctionFoldActivity {
 
     @Override
     protected void onDestroy() {
-        if (mBp723Control!=null) {
-            mBp723Control.disconnect();
-        }
+//        if (mBp723Control != null) {
+//            mBp723Control.disconnect();
+//        }
+        iHealthDevicesManager.getInstance().disconnectDevice(mDeviceMac, iHealthDevicesManager.TYPE_KD723);
         iHealthDevicesManager.getInstance().unRegisterClientCallback(mClientCallbackId);
         clearLogInfo();
         super.onDestroy();
@@ -175,7 +194,7 @@ public class KD723 extends FunctionFoldActivity {
         return super.onKeyUp(keyCode, event);
     }
 
-    @OnClick({R.id.btnDisconnect, R.id.btnBattery,  R.id.btnGetData})
+    @OnClick({R.id.btnDisconnect, R.id.btn_getFunctionInfo, R.id.btnGetData, R.id.btnSetTime, R.id.btnGetDataCount, R.id.btnDeleteData})
     public void onViewClicked(View view) {
         if (mBp723Control == null) {
             addLogInfo("mBp926Control == null");
@@ -184,19 +203,36 @@ public class KD723 extends FunctionFoldActivity {
         showLogLayout();
         switch (view.getId()) {
             case R.id.btnDisconnect:
-                mBp723Control.disconnect();
+                iHealthDevicesManager.getInstance().disconnectDevice(mDeviceMac, iHealthDevicesManager.TYPE_KD723);
                 addLogInfo("disconnect()");
                 break;
 
-            case R.id.btnBattery:
-                mBp723Control.getBattery();
-                addLogInfo("getBattery()");
+            case R.id.btn_getFunctionInfo:
+                mBp723Control.getFunctionInfo();
+                addLogInfo("getFunctionInformation()");
+                break;
+
+            case R.id.btnSetTime:
+                mBp723Control.setTime(DateFormat.is24HourFormat(mContext));
+                addLogInfo("setTime()");
+                break;
+
+            case R.id.btnGetDataCount:
+                mBp723Control.getMemoryCount();
+                addLogInfo("getMemoryCountWithUserID()");
                 break;
 
             case R.id.btnGetData:
-                mBp723Control.commandSetUser(1);
-                mBp723Control.getData();
+//                mBp723Control.commandSetUser(1);
+//                mBp723Control.getData();
+
+                mBp723Control.getMemoryData();
                 addLogInfo("getData()");
+                break;
+
+            case R.id.btnDeleteData:
+                mBp723Control.deleteMemoryData();
+                addLogInfo("deleteHistoryData()");
                 break;
         }
     }

@@ -56,4 +56,6 @@ public class BaseApplication extends Application {
     public void logOut() {
         AppManager.instance().finishAllActivity();
     }
+
+
 }
