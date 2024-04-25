@@ -18,6 +18,12 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name=" android.permission.WRITE_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 
     <uses-sdk
         tools:overrideLibrary="no.nordicsemi.android.dfu" />
@@ -42,7 +48,9 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".business.LaunchActivity">
+        <activity
+            android:exported="true"
+            android:name=".business.LaunchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
